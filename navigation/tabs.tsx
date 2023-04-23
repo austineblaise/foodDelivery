@@ -14,7 +14,7 @@ import { COLORS, icons } from "../constants"
 
 const Tab = createBottomTabNavigator();
 
-const TabBarCustomButton = ({ accessibilityState, children, onPress }) => {
+const TabBarCustomButton = ({ accessibilityState, children, onPress }: any) => {
 
     var isSelected = accessibilityState.selected
 
@@ -69,7 +69,7 @@ const TabBarCustomButton = ({ accessibilityState, children, onPress }) => {
     }
 }
 
-const CustomTabBar = (props) => {
+const CustomTabBar = (props: any) => {
     if (isIphoneX()) {
         return (
             <View>
@@ -113,7 +113,7 @@ const Tabs = () => {
                     elevation: 0
                 }
             }}
-            tabBar={(props) => (
+            tabBar={(props: any) => (
                 <CustomTabBar
                     props={props}
                 />
@@ -123,7 +123,7 @@ const Tabs = () => {
                 name="Home"
                 component={Home}
                 options={{
-                    tabBarIcon: ({ focused }) => (
+                    tabBarIcon: ({ focused }: any) => (
                         <Image
                             source={icons.cutlery}
                             resizeMode="contain"
@@ -134,7 +134,7 @@ const Tabs = () => {
                             }}
                         />
                     ),
-                    tabBarButton: (props) => (
+                    tabBarButton: (props: any) => (
                         <TabBarCustomButton
                             {...props}
                         />
@@ -146,7 +146,7 @@ const Tabs = () => {
                 name="Search"
                 component={Home}
                 options={{
-                    tabBarIcon: ({ focused }) => (
+                    tabBarIcon: ({ focused }: any) => (
                         <Image
                             source={icons.search}
                             resizeMode="contain"
@@ -157,7 +157,7 @@ const Tabs = () => {
                             }}
                         />
                     ),
-                    tabBarButton: (props) => (
+                    tabBarButton: (props: any) => (
                         <TabBarCustomButton
                             {...props}
                         />
@@ -169,7 +169,7 @@ const Tabs = () => {
                 name="Like"
                 component={Home}
                 options={{
-                    tabBarIcon: ({ focused }) => (
+                    tabBarIcon: ({ focused }: any) => (
                         <Image
                             source={icons.like}
                             resizeMode="contain"
@@ -180,7 +180,7 @@ const Tabs = () => {
                             }}
                         />
                     ),
-                    tabBarButton: (props) => (
+                    tabBarButton: (props: any) => (
                         <TabBarCustomButton
                             {...props}
                         />
@@ -192,7 +192,7 @@ const Tabs = () => {
                 name="User"
                 component={Home}
                 options={{
-                    tabBarIcon: ({ focused }) => (
+                    tabBarIcon: ({ focused }: any) => (
                         <Image
                             source={icons.user}
                             resizeMode="contain"
@@ -203,7 +203,7 @@ const Tabs = () => {
                             }}
                         />
                     ),
-                    tabBarButton: (props) => (
+                    tabBarButton: (props: any) => (
                         <TabBarCustomButton
                             {...props}
                         />

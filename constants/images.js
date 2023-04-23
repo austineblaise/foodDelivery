@@ -46,7 +46,7 @@ export default {
     honey_mustard_chicken_burger,
     hot_dog_restaurant,
     ice_kacang,
-
+    salad,
     japanese_restaurant,
     kek_lapis_shop,
     kek_lapis,
